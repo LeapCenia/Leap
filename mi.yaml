@@ -1,14 +1,15 @@
-prepend-proxy-groups:
-  - name: Hoyoverse
-    type: select
-commands:
-  -proxy-groups.Hoyoverse.proxies=[]proxyNames|HK|港|JP|日本|TW|台|US|美
-prepend-rules:
-  - DOMAIN-SUFFIX,genshinimpact.com,Hoyoverse
-  - DOMAIN-SUFFIX,honkaiimpact3.com,Hoyoverse
-  - DOMAIN-SUFFIX,honkaistarrail.com,Hoyoverse
-  - DOMAIN-SUFFIX,hoyo.link,Hoyoverse
-  - DOMAIN-SUFFIX,hoyolab.com,Hoyoverse
-  - DOMAIN-SUFFIX,hoyoverse.com,Hoyoverse
-  - DOMAIN-SUFFIX,n0vadesktop.com,Hoyoverse
-  - DOMAIN-SUFFIX,yuanshen.com,Hoyoverse
+yaml:
+  prepend-proxy-groups:
+    - name: Hoyoverse
+      type: select
+  commands:
+    -proxy-groups.Hoyoverse.proxies=[]proxyNames|HK|港|JP|日本|TW|台|US|美
+  prepend-rules:
+    - DOMAIN-SUFFIX,genshinimpact.com,Hoyoverse
+    - DOMAIN-SUFFIX,honkaiimpact3.com,Hoyoverse
+    - DOMAIN-SUFFIX,honkaistarrail.com,Hoyoverse
+    - DOMAIN-SUFFIX,hoyo.link,Hoyoverse
+    - DOMAIN-SUFFIX,hoyolab.com,Hoyoverse
+    - DOMAIN-SUFFIX,hoyoverse.com,Hoyoverse
+    - DOMAIN-SUFFIX,n0vadesktop.com,Hoyoverse
+    - DOMAIN-SUFFIX,yuanshen.com,Hoyoverse
