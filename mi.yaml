@@ -1,15 +1,17 @@
-yaml:
-  prepend-proxy-groups:
-    - name: Hoyoverse
-      type: select
-  commands:
-    -proxy-groups.Hoyoverse.proxies=[]proxyNames|HK|港|JP|日本|TW|台|US|美
-  prepend-rules:
-    - DOMAIN-SUFFIX,genshinimpact.com,Hoyoverse
-    - DOMAIN-SUFFIX,honkaiimpact3.com,Hoyoverse
-    - DOMAIN-SUFFIX,honkaistarrail.com,Hoyoverse
-    - DOMAIN-SUFFIX,hoyo.link,Hoyoverse
-    - DOMAIN-SUFFIX,hoyolab.com,Hoyoverse
-    - DOMAIN-SUFFIX,hoyoverse.com,Hoyoverse
-    - DOMAIN-SUFFIX,n0vadesktop.com,Hoyoverse
-    - DOMAIN-SUFFIX,yuanshen.com,Hoyoverse
+- DOMAIN-SUFFIX,emby.pilipiliultra.top
+- DOMAIN-SUFFIX,ntrrr.top
+- DOMAIN-SUFFIX,embyplus.org
+- DOMAIN-SUFFIX,cf.freetz.top
+- DOMAIN-SUFFIX,film.reddust.link
+- DOMAIN-SUFFIX,cf.mjjemby.org
+- DOMAIN-SUFFIX,bili.rip
+- DOMAIN-SUFFIX,singularity.bagpipe.moe
+- DOMAIN-SUFFIX,jmsooo.com
+
+rule-providers:
+  HoYoverse:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/LM-Firefly/Rules/master/Game/HoYoverse.list"
+    path: ./ruleset/HoYoverse.yaml
+    interval: 3600
