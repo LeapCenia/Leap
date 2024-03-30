@@ -1,12 +1,4 @@
-- DOMAIN-SUFFIX,emby.pilipiliultra.top
-- DOMAIN-SUFFIX,ntrrr.top
-- DOMAIN-SUFFIX,embyplus.org
-- DOMAIN-SUFFIX,cf.freetz.top
-- DOMAIN-SUFFIX,film.reddust.link
-- DOMAIN-SUFFIX,cf.mjjemby.org
-- DOMAIN-SUFFIX,bili.rip
-- DOMAIN-SUFFIX,singularity.bagpipe.moe
-- DOMAIN-SUFFIX,jmsooo.com
+
 
 rule-providers:
   HoYoverse:
